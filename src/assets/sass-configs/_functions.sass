@@ -1,0 +1,13 @@
+=bg-grad($bg-color, $color1, $color2)
+	background-color: $bg-color
+	background-image: -webkit-linear-gradient(-410deg, $color1 10%, $color2 90%)
+	background-image: linear-gradient(140deg, $color1 10%, $color2 90%)
+
+=width-algo($col)
+	width: 100% / 12 * $col
+	vertical-align: top
+	display: inline-block
+
+=color-and-text-shadow($color, $shadow)
+	color: $color
+	text-shadow: 1px 1px 1px $shadow
