@@ -1,1 +1,13 @@
 <pb-header></pb-header>
+<div fxLayout="row">
+	<div fxFlex>
+
+	</div>
+	<div fxFlex>
+		<form #signupForm="ngForm" novalidate name="signup">
+			<input type="text" name="firstName" required [(ngModel)]="signup.firstName">
+			{{signup.firstName}}
+		</form>
+	</div>
+	<div fxFlex></div>
+</div>
