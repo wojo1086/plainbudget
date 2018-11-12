@@ -1,13 +1,37 @@
 <pb-header></pb-header>
-<div fxLayout="row">
+<div fxLayout="row" fxLayoutAlign="center center" fxFlexFill>
 	<div fxFlex>
-
-	</div>
-	<div fxFlex>
-		<form #signupForm="ngForm" novalidate name="signup">
-			<input type="text" name="firstName" required [(ngModel)]="signup.firstName">
-			{{signup.firstName}}
+		<form #signupForm="ngForm" novalidate name="signup" fxLayout="row">
+			<div fxFlex="35"></div>
+			<div fxLayout="column" fxFlex>
+				<div fxFlex>
+					<label for="firstName">First Name</label>
+					<input class="default-input" id="firstName" type="text" name="firstName" required
+					       [(ngModel)]="signup.firstName">
+				</div>
+				<div fxFlex>
+					<label for="lastName">Last Name</label>
+					<input class="default-input" id="lastName" type="text" name="lastName" required
+					       [(ngModel)]="signup.lastName">
+				</div>
+				<div fxFlex>
+					<label for="emailAddress">Email Address</label>
+					<input class="default-input" id="emailAddress" type="text" name="emailAddress" required
+					       [(ngModel)]="signup.emailAddress">
+				</div>
+				<div fxFlex>
+					<label for="password">Password</label>
+					<input class="default-input" id="password" type="text" name="password" required
+					       [(ngModel)]="signup.password">
+				</div>
+				<div fxFlex>
+					<label for="retypePassword">Retype Password</label>
+					<input class="default-input" id="retypePassword" type="text" name="retypePassword" required
+					       [(ngModel)]="signup.retypePassword">
+					<input type="submit" class="pb-btn-green">
+				</div>
+			</div>
+			<div fxFlex="35"></div>
 		</form>
 	</div>
-	<div fxFlex></div>
 </div>

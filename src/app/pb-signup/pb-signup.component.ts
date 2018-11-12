@@ -7,7 +7,11 @@ import {Component, OnInit} from '@angular/core';
 })
 export class PbSignupComponent implements OnInit {
     signup = {
-        firstName: ''
+        firstName: '',
+        lastName: '',
+        emailAddress: '',
+        password: '',
+        retypePassword: ''
     };
 
     constructor() {
